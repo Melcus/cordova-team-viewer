@@ -18,7 +18,7 @@
     <!-- SDK methods mapping -->
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="teamviewersdk">
-          <param name="android-package" value="com.cordova.teamviewersdk.TeamViewerSDK" />
+          <param name="android-package" value="com.cordova.teamviewersdk.teamviewersdk" />
       </feature>
     </config-file>
 
