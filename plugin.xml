@@ -9,16 +9,16 @@
   <keywords>teamviewer, team, viewer, remote, access</keywords>
   <license>Apache 2.0 License</license>
 
-  <js-module src="www/teamViewerSDK.js" name="TeamViewerSDK">
-    <clobbers target="TeamViewerSDK"/>
+  <js-module src="www/teamViewerSDK.js" name="teamviewersdk">
+    <clobbers target="teamviewersdk"/>
   </js-module>
 
   <!-- android -->
   <platform name="android">
     <!-- SDK methods mapping -->
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="TeamViewerSDK">
-          <param name="android-package" value="com.cordova.teamViewerSDK.TeamViewerSDK" />
+      <feature name="teamviewersdk">
+          <param name="android-package" value="com.cordova.teamviewersdk.TeamViewerSDK" />
       </feature>
     </config-file>
 
@@ -27,7 +27,7 @@
            <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     </config-file>
 
-    <source-file src="src/android/TeamViewerSDK.java" target-dir="src/com/cordova/teamViewerSDK"/>
+    <source-file src="src/android/TeamViewerSDK.java" target-dir="src/com/cordova/teamviewersdk"/>
 
     <!-- adding team viewer sdk -->
     <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
